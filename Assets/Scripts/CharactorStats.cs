@@ -16,7 +16,7 @@ public enum JobType
     Magician = 2,
     Rogue = 3,
 }
-
+[Serializable]
 public class CharactorStats
 {
     public StatsChangeType statsChangeType;
