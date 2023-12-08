@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -9,6 +8,9 @@ public class PlayerInfo : MonoBehaviour
     [SerializeField] private CharactorStats baseStats;
     public CharactorStats CurrentStats { get; private set;}
     public List<CharactorStats> statsModifiers = new List<CharactorStats>();
+    public bool weaponEq = false;
+    public bool armorEq = false;
+    public bool accessoryEq = false;
 
     private void Awake()
     {
@@ -27,7 +29,7 @@ public class PlayerInfo : MonoBehaviour
     //    CurrentStats = new CharactorStats();
     //}
 
-    private string csvFilePath = "Assets/CSV/Data.csv";
+    private string csvFilePath = "Assets/CSV/JobData.csv";
     public CharactorStats LoadInitialStats(JobType jobType)
     {
         string[] lines = File.ReadAllLines(csvFilePath);
@@ -51,7 +53,10 @@ public class PlayerInfo : MonoBehaviour
                             lv = int.Parse(values[4]),
                             exp = float.Parse(values[5]),
                             maxExp = float.Parse(values[6]),
-                            gold = int.Parse(values[7])
+                            gold = int.Parse(values[7]),
+                            upMaxHp = int.Parse(values[8]),
+                            upAtk = int.Parse(values[9]),
+                            upDef = int.Parse(values[10])
                         };
                         return stats;
                     }

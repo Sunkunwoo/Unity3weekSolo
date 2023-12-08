@@ -1,4 +1,0 @@
-Job,maxHp,atk,def,lv,exp,maxExp,gold
-Knight,200,50,70,1,0,100,0
-Magician,50,80,25,1,0,100,0
-Rogue,50,65,40,1,0,100,0

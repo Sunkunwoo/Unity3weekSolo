@@ -1,0 +1,9 @@
+index,itemName,itemValue,itemQuantity,Atk,Def,Heal,itemType
+1,LongSword,10,1,20,0,0,Weapon
+2,Iron Stick,100,0,40,0,0,Weapon
+3,Leather Armor,10,1,0,20,0,Armor
+4,Chainmail,100,0,0,40,0,Armor
+5,Spartan Bracelet,10,1,5,5,0,Accessory
+6,Mount Ring,100,0,10,10,0,Accessory
+7,SmallPotion,100,2,0,0,20,potion
+8,HightPotion,200,2,0,0,100,potion

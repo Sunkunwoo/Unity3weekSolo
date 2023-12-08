@@ -1,0 +1,4 @@
+Job,maxHp,atk,def,lv,exp,maxExp,gold,upMaxHp,upAtk,upDef,
+Knight,200,50,70,1,0,100,0,20,5,10,
+Magician,50,80,25,1,0,100,0,10,8,2,
+Rogue,50,65,40,1,0,100,0,10,7,5,

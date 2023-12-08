@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public enum StatsChangeType
 {
@@ -28,4 +25,8 @@ public class CharactorStats
     public float exp;
     public float maxExp;
     public int gold;
+
+    public int upMaxHp;
+    public int upAtk;
+    public int upDef;
 }
