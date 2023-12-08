@@ -8,25 +8,19 @@ public class SelectJob : MonoBehaviour
     public GameObject player;
     public void SelectKnight()
     {
-        player.GetComponent<PlayerInfo>().CurrentStats.job = JobType.Knight;
-        player.GetComponent<PlayerInfo>().LoadInitialStats(JobType.Knight);
+        GameManager.Instance.charactorStats.job = JobType.Knight;
         SceneManager.LoadScene("02");
-        Instantiate(player);
     }
 
     public void SelectMagician()
     {
-        player.GetComponent<PlayerInfo>().CurrentStats.job = JobType.Magician;
-        player.GetComponent<PlayerInfo>().LoadInitialStats(JobType.Magician);
+        GameManager.Instance.charactorStats.job = JobType.Magician;
         SceneManager.LoadScene("02");
-        Instantiate(player);
     }
 
     public void SelectRogue()
     {
-        player.GetComponent<PlayerInfo>().CurrentStats.job = JobType.Rogue;
-        player.GetComponent<PlayerInfo>().LoadInitialStats(JobType.Rogue);
+        GameManager.Instance.charactorStats.job = JobType.Rogue;
         SceneManager.LoadScene("02");
-        Instantiate(player);
     }
 }

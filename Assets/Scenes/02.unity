@@ -2036,7 +2036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2491769660446442426, guid: 68357f2fccec37d49b92a4e279149479, type: 3}
       propertyPath: baseStats.job
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3074143759801393132, guid: 68357f2fccec37d49b92a4e279149479, type: 3}
       propertyPath: m_RootOrder

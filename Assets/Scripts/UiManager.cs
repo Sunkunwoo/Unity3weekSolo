@@ -26,7 +26,7 @@ public class UiManager : MonoBehaviour
             defTxt.text = player.GetComponent<PlayerInfo>().CurrentStats.def.ToString();
             expTxt.text = player.GetComponent<PlayerInfo>().CurrentStats.exp.ToString() + "/" + player.GetComponent<PlayerInfo>().CurrentStats.maxExp.ToString();
             jobTxt.text = player.GetComponent<PlayerInfo>().CurrentStats.job.ToString();
-            goldTxt.text = player.GetComponent<PlayerInfo>().CurrentStats.maxHp.ToString();
+            goldTxt.text = player.GetComponent<PlayerInfo>().CurrentStats.gold.ToString();
         }
         else
         {

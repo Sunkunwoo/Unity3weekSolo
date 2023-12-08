@@ -12,14 +12,16 @@ public class PlayerInfo : MonoBehaviour
 
     private void Awake()
     {
-        CurrentStats = new CharactorStats();
-        LoadInitialStats(CurrentStats.job);
         DontDestroyOnLoad(this);
     }
 
     private void Start()
     {
+        CurrentStats = new CharactorStats();
+        CurrentStats.job = GameManager.Instance.charactorStats.job;
+        CurrentStats = LoadInitialStats(CurrentStats.job);
     }
+
     //private void UpdateCharacterStats()
     //{
     //    CurrentStats = new CharactorStats();
