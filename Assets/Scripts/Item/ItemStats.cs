@@ -13,6 +13,7 @@ public class ItemStats
     public int healthBonus;
     public ItemType itemType;
     public Sprite itemIcon;
+    public bool CheckEQ;
 
     public enum ItemType
     {
@@ -32,5 +33,32 @@ public class ItemStats
         healthBonus = _healthBonus;
         itemType = _itemType;
         //itemIcon = Resources.Load<Sprite>("ItemIcon/" + _index.ToString());
+    }
+
+    public void UseItem()
+    {
+        if (itemType == ItemType.Potion)
+        {
+            if (itemQuantity != 0)
+            {
+                itemQuantity--;
+                Debug.Log($"Used Potion! Remaining Quantity: {itemQuantity}");
+            }
+            else
+            {
+                Debug.Log($"{itemName} Item Count : 0");
+            }
+        }
+        else
+        {
+            if (itemQuantity != 0)
+            {
+                Debug.Log($"Used {itemName}");
+            }
+            else
+            {
+                Debug.Log($"Can not Used {itemName}");
+            }
+        }
     }
 }
